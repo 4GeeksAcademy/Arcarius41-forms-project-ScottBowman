@@ -28,25 +28,58 @@
         <div class="alert alert-danger" role="alert">
           <h5 class="alert-heading">Some Fields are missing</h5>
         </div>
-        <div class="row">
-          <div class="col-3">
+        <div class="container text-left">
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="col">
+                <div class="form-outline">
+                  <label class="form-label" for="formCardNumber">Credit card number</label>
+                  <input type="text" placeholder="XXXXXXXXXXXXXXXXXX" id="formCardNumber" class="form-control" />
+                  
+                </div>
+    
+              </div>
+            </div>
+            <div class="col">
+              <div class="col">
+                <div class="form-outline">
+                  <label class="form-label" for="formCVV">CVV</label>
+                  <input type="text" placeholder="0000" id="formCVV" class="form-control" />
+
+                </div>
+    
+                </div>
+            </div>
+            <div class="col">
+              <div class="form-outline">
+                <label class="input-group-addon">Amount</label>
+                <input type="text" placeholder="$ amount" class="form-control">
+                <!-- <span class="input-group-addon">.0</span> -->
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col">
             <div class="form-outline">
               <label class="form-label" for="formCardNumber">Credit card number</label>
               <input type="text" id="formCardNumber" class="form-control" />
               
             </div>
+
           </div>
-          <div class="col-3">
+          <div class="col">
             <div class="form-outline">
               <label class="form-label" for="formCVV">CVV</label>
               <input type="text" id="formCVV" class="form-control" />
-            </div>
               <div class="form-outline">
                 <label class="input-group-addon">$</label>
                 <input type="text" class="form-control">
                 <span class="input-group-addon">.0</span>
             </div>
             </div>
+
+            </div> -->
           </div>
         </div>
         <form class="needs-validation" novalidate>
@@ -143,10 +176,10 @@
             </div>
           </div>
         </form>
-        <div class="row">
-          <div class="col-6">We accept:</div>
-          <div class="col-6">Message</div>
-        </div>
+        <!-- <div class="row">
+          <div class="col">We accept:</div>
+          <div class="col">Message</div>
+        </div> -->
           
         <script>
           // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -169,8 +202,11 @@
           })();
         </script>
         <div class="row">
-          <div class="col-3 form-check-inline">
+          
+          <div class="col form-check-inline">
+            
             <div class="btn-secondary ml-4 btn btn-secondary">
+              <label class="input-group-addon">We Accept:</label>
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
               <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-lg"></i></label>
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
@@ -181,12 +217,14 @@
               <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-discover fa-lg"></i></label>
             </div>
           </div>
-          <div class="col-3"></div>
-          <div class="col-5 ml-8">
+          <div class="col">
+           
+            <div class="col ml-8">
+              <label class="input-group-addon">Write a Message (Optional):</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
           </div>
         </div>
-
         <div class="card-footer text-muted text-right mt-2">
           <button type="button" class="btn btn-secondary">Cancel</button>
           <button type="button" class="btn btn-primary">Send</button>
